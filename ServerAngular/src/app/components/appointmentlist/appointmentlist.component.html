@@ -1,0 +1,92 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+      <span>
+        06
+      </span><br />
+      <span>
+        queu
+      </span>
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+      <span>
+        02
+      </span><br />
+      <span>
+        Earlier
+      </span>
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+      <span>
+        05
+      </span><br />
+      <span>
+        Wait List
+      </span>
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+      <span>
+        00
+      </span><br />
+      <span>
+        No show
+      </span>
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="card">
+          <div class="card body">
+            <h4 class="card-title">Home</h4>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>PATIENT</th>
+                  <th>CONTACT</th>
+                  <th>APPOINTMENT</th>
+                  <th>WAITED</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let applist of applists">
+                  <td>{{applist._id}}</td>
+                  <td>                    
+                    <div style="display: flex;">
+                      <span> 
+                        <div>
+                          <img src="../../../assets/image/icon_profile.png" alt="" width="30px" height="30px" />
+                        </div>                       
+                      </span>
+                      <span>{{ applist.name }}<br /> {{ applist.gender }}, {{ applist.age }} yr</span>
+                      
+                    </div>                    
+                  </td>
+                  
+                  <td>{{ applist.contact }}</td>
+                  <td>{{ applist.apptime }}</td>
+                  <td>{{ applist.waitedtime }}</td>
+                  <td><button style=" width: 80px;" class="btn btn-danger">{{applist.vitalscheckin}}</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">dksdkskdksdkskdkskdkskdkskdksdk</div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3</div>
+</div>

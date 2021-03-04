@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">APPOINTMENT App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#" (click)="newCountry($event)">Novo</a>
+        </li> -->
+        <li class="nav-item">
+          <div style="display: flex; color: white;">
+            <div>
+              <img src="../../../assets/image/icon_profile.png" width="45px" height="45px" alt="" />
+            </div>
+            <div>
+              <span>
+                Dr. Nishant Clinician 
+              </span> 
+              <br/>
+              <span>
+                Kids Care Clinic 
+              </span>              
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <input id="txtDOB" name="DOB" class="form-control" style="margin-left: 50px;"
+          placeholder="Enter Your Date of Birth" type="text" bsDatepicker value="{{clickMessage}}"/>
+
+        </li>
+      </ul>      
+    </div>
+  </nav>
